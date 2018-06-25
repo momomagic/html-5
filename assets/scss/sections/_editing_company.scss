@@ -1,0 +1,42 @@
+/*-----------------------------
+    Editing Company
+------------------------------*/
+.editing-company-area{
+    padding: 120px 0;
+    .left-content-area{}
+    .right-content-are{
+        padding-left: 40px;
+        padding-right: 40px;
+        .subtitle{
+            font-size: 20px;
+            line-height: 30px;
+            color: #006cff;
+            font-weight: 400;
+            margin-bottom: 20px;
+            display: block;
+        }
+        .title{
+            color: #262b49;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 27px;
+        }
+        p{
+            color: #64687e;
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .btn-wrapper{
+            padding-top: 10px;
+            .boxed-btn{
+                border: 2px solid transparent;
+                &:hover{
+                    background-color: transparent;
+                    border-color: rgba(0,0,0,0.10);
+                    color: #262b49;
+                }
+            }
+        }
+    }
+}

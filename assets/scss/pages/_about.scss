@@ -1,0 +1,250 @@
+/*---------------------
+    About Page
+----------------------*/
+.counterup-area{
+    padding: 120px 0 58px 0;
+    .left-content-area{
+        .img-container{
+            position: relative;
+            display: inline-block;
+            z-index: 0;
+            &:after {
+                position: absolute;
+                right: -20px;
+                top: 20px;
+                width: 100%;
+                height: 100%;
+                content: '';
+                background-color: $base-color;
+                z-index: -1;
+            }
+        }
+    }
+    .right-content-area{
+        padding-left: 50px;
+        .single-right-item{
+            position: relative;
+            margin-bottom: 60px;
+            .icon{
+                font-size: 80px;
+                line-height: 80px;
+                position: absolute;
+                left: 0;
+                top: 0;
+                color: $base-color;
+                i{
+                    &:before {
+                        font-size: 80px;
+                        line-height: 80px;
+                    }
+                }
+            }
+            .content{
+                padding-left: 110px;
+                .counter-area{
+                    .count-number{
+                        font-size: 60px;
+                        line-height: 60px;
+                        font-family: $heading-font;
+                        font-weight: 800;
+                        color: #262b49;
+                    }
+                    .plus {
+                        @extend .count-number;
+                    }
+                }
+                .title{
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: #64687e;
+                    font-weight: 400;
+                }
+                .count-number-support{
+                    font-size: 60px;
+                    line-height: 70px;
+                    font-family: $heading-font;
+                    font-weight: 800;
+                    color: #262b49;
+                }
+            }
+        }
+    }
+}
+.creative-work-area{
+    background-color: #f7f7f7;
+    padding: 120px 0 120px 0;
+    .left-content-area{
+        .subtitle{
+            font-size: 20px;
+            line-height: 30px;
+            color: #006cff;
+            font-family: $heading-font;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .title{
+            font-size: 50px;
+            line-height: 60px;
+            color: #262b49;
+            margin-bottom: 22px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+            color: #64687e;
+            padding-right: 80px;
+        }
+        .btn-wrapper{
+            margin-top: 35px;
+            .boxed-btn{
+                border: 2px solid transparent;
+                &:hover{
+                    background-color: transparent;
+                    border-color: rgba(0,0,0,0.10);
+                    color: $heading-color;
+                }
+            }
+        }
+    }
+    .right-content-area{
+        .video-thumb{
+            position: relative;
+            display: inline-block;
+            .hover{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+.faq-area{
+    padding: 120px 0; 
+    .faq-inner-area{
+        .faq-wrapper{
+            padding: 60px 60px 40px 60px;
+            border: 2px solid rgba(0,0,0,0.10);
+            border-radius: 5px;
+            .card{
+                margin-bottom: 20px;
+                border: none;
+                .card-header{
+                    padding: 0;
+                    background-color: transparent;
+                    border: none;
+                    h5{
+                        a{
+                            display: block;
+                            text-align: left;
+                            font-size: 14px;
+                            line-height: 24px;
+                            font-weight: 600;
+                            color: #64687e;
+                            padding: 21px 38px;
+                            border: 2px solid rgba(0,0,0,0.10);
+                            position: relative;
+                            @include transition($transition);
+                            &:after{
+                                position: absolute;
+                                right: -2px;
+                                top: -2px;
+                                width: 70px;
+                                height: 70px;
+                                background-color: $base-color;
+                                @include fontawesomeIcon("\f067");
+                                font-size: 20px;
+                                line-height: 70px;
+                                text-align: center;
+                                color: $white;
+                                @include transition($transition);
+                                border-top-right-radius: 5px;
+                                border-bottom-right-radius: 5px;
+                            }
+                            &[aria-expanded="true"]{
+                                border-bottom: none;
+                                color: $base-color;
+                                &:after{
+                                    content: "\f068";
+                                    border-bottom-right-radius: 0px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .card-body{
+                    border: 2px solid rgba(0,0,0,0.10);
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border-top: none;
+                    padding: 13px 40px 38px 40px;
+                    font-size: 14px;
+                    color:#64687e;
+                    padding-right: 70px;
+                    .btn-wrapper{
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+.our-team-area{
+    background-color: #f7f7f7;
+    padding: 120px 0 90px 0;
+    .single-team-member{
+        position: relative;
+        min-height: 293px;
+        background-color: $white;
+        margin-bottom: 30px;
+        @include transition($transition);
+        &:hover{
+            box-shadow: 0 8px 60px 0px  rgba(0,0,0,0.10);
+        }
+        .left-content-area{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .right-content-area{
+            padding: 50px 40px 40px 285px; 
+        
+            .post{
+                font-size: 14px;
+                line-height: 24px;
+                color: $base-color;
+            }
+            .name{
+                font-size: 24px;
+                line-height: 36px;
+                color: #262b49;
+            }
+            p{
+                font-size: 14px;
+                line-height: 24px;
+                color: #64687e;
+            }
+            .social-links{
+                li{
+                    display: inline-block;
+                    margin: 0 3px;
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                    a{
+                        color: #64687e;
+                        @include transition($transition);
+                        &:hover{
+                            color: $base-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

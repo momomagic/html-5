@@ -1,0 +1,51 @@
+/*---------------------
+    Call To Action
+----------------------*/
+.call-to-action{
+    background-color: #262b49;
+    padding: 70px 0;
+    &.services-page{
+        background-color: #006cff;
+        .call-to-action-inner{
+            .right-content-area {
+                .btn-wrapper {
+                    .boxed-btn {
+                        border: 2px solid transparent;
+                        background-color: #262b49;
+                        &:hover {
+                            background-color: transparent;
+                            border-color: #262b49;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .call-to-action-inner{
+        .left-content-area {
+            display: inline-block;
+            .title {
+                font-size: 40px;
+                line-height: 50px;
+                color: $white;
+                font-weight: 700;
+            }
+        }
+
+        .right-content-area{
+            display: inline-block;
+            float: right;
+            .btn-wrapper {
+                .boxed-btn {
+                    border: 2px solid transparent;
+                    &:hover{
+                        background-color: transparent;
+                        border-color: $base-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

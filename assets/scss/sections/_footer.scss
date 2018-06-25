@@ -1,0 +1,133 @@
+/*---------------------
+    Footer Area 
+----------------------*/
+.footer-area{
+    .footer-top-area{
+        background-color: #161a2f;
+        padding: 75px 0 60px 0;
+        .footer-widget{
+            .widget-title{
+                margin-bottom: 38px;
+                .title{
+                    font-size: 26px;
+                    line-height: 36px;
+                    color: #bdbfca;
+                }
+            }
+            &.subscribe{
+                .form-element{
+                    .input-field{
+                        background-color: #20253d;
+                        border: none;
+                        color: #848794;
+                        @include placeholder-color(#848794);
+                        margin-bottom: 20px;
+                    }
+                }
+                .submit-btn{
+                    width: 200px;
+                    margin: auto;
+                    margin-top: 10px;
+                    display: block;
+                    border: 2px solid transparent;
+                    &:hover{
+                        background-color: transparent;
+                        border: 2px solid rgba(255,255,255,.20);
+                    }
+                }
+            }
+            &.blog-feeds{
+                .widget-body{
+                    .single-blog-feed-item{
+                        position: relative;
+                        min-height: 95px;
+                        .thumb{
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                        }
+                        .content {
+                            padding-left:120px; 
+                            .title{
+                                font-size: 16px;
+                                font-weight: 700;
+                                line-height: 20px;
+                                color: #a7aab9;
+                                @include transition($transition);
+                                &:hover{
+                                    color: $base-color;
+                                }
+                            }
+                            .date{
+                                font-size: 14px;
+                                line-height: 24px;
+                                color: #5b6471;
+                            }
+                        }
+                    }
+                }
+            }
+            &.instagram{
+                .widget-body{
+                    ul{
+                        li{
+                            display: inline-block;
+                            margin: 3px;
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+            &.pages {
+                .widget-body{
+                    ul{
+                        li{
+                            display: block;
+                            padding: 8px 0;
+                            &:first-child{
+                                padding-top: 0;
+                            }
+                            a{
+                                color: #a7aab9;
+                                @include transition($transition);
+                                position: relative;
+                                &:after{
+                                    position: absolute;
+                                    left: 0;
+                                    top: 50%;
+                                    content: '-';
+                                    color: $base-color;
+                                    @include translateY(-60%);
+                                    visibility: hidden;
+                                    opacity: 0;
+                                }
+                                &:hover{
+                                    color: $base-color;
+                                    padding-left: 20px;
+                                    &:after{
+                                        visibility: visible;
+                                        opacity: 1;
+                                        left: 10px;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright-area{
+        background-color: #0f1223;
+        color: #6b7085;
+        padding: 25px 0;
+        a{
+            color: #6b7085;
+            @include transition($transition);
+            &:hover{
+                color: $white;
+            }
+        }
+    }
+}

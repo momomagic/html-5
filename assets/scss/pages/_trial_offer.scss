@@ -1,0 +1,42 @@
+/*---------------------
+    Trial Offer
+---------------------*/
+.trial-offer-area{
+    padding: 115px 0 120px 0;
+    .trail-offer-form-wrapper{
+        .trial-offer-header{
+            padding-bottom: 20px;
+            .left-content-area {
+                display: inline-block;
+                .title {
+                    font-size: 40px;
+                    line-height: 50px;
+                    color: #262b49;
+                }
+            }
+            .right-content-area{
+                display: inline-block;
+                float: right;
+                padding-top: 15px;
+                .checkbox-element{
+                    padding-left: 27px;
+                }
+            }
+        }
+    }
+    .submit-btn {
+        width: 375px;
+    }
+    .form-element {
+        .file-upload.has-icon {
+            .the-icon {
+                color: $base-color;
+            }
+        }
+    }
+    .form-element {
+        .input-field.textarea {
+            min-height: 250px;
+        }
+    }
+}

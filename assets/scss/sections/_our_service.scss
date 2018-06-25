@@ -1,0 +1,53 @@
+/*------------------------
+    Our service
+-------------------------*/
+.service-area{
+    background-color: #262b49;
+    padding: 120px 0;
+    .section-title{
+        .title{
+            color: $white;
+        }
+        p{
+            color: #b9bbc8;
+        }
+        .separator{
+            background-image: -moz-linear-gradient( 0deg, rgb(38, 43, 73) 0%, rgb(0, 108, 255) 50%, rgb(38, 43, 73) 100%);
+            background-image: -webkit-linear-gradient( 0deg, rgb(38, 43, 73) 0%, rgb(0, 108, 255) 50%, rgb(38, 43, 73) 100%);
+            background-image: -ms-linear-gradient( 0deg, rgb(38, 43, 73) 0%, rgb(0, 108, 255) 50%, rgb(38, 43, 73) 100%);
+        }
+    }
+    .single-service-box{
+        text-align: center;
+        &:hover{
+            .thumb{
+                img{
+                    opacity: .8;
+                }
+            }
+            .content{
+                .title{
+                    color: $base-color;
+                }
+            }
+        }
+        .content{
+            border: 2px solid rgba(255,255,255,.10);
+            border-top: none;
+            padding: 27px 40px 27px 40px;
+            @include transition($transition);
+            .title{
+                color: $white;
+                font-size: 24px;
+                line-height: 35px;
+                @include transition($transition);
+            }
+            p{
+                color: #b9bbc8;
+                font-size: 14px;
+                line-height: 24px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

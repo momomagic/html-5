@@ -1,0 +1,48 @@
+/*-----------------------
+    Support Bar
+-----------------------*/
+.support-bar-area {
+    padding: 14px 0;
+    border-bottom: 1px solid #f6f6f6;
+    .support-bar-inner {
+        .left-content-area {
+            display: inline-block;
+            float: left;
+            ul {
+                li {
+                    display: inline-block;
+                    margin: 0 17px;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                    a {
+                        color: #5a646d;
+                        font-size: 14px;
+                        @include transition($transition);
+                        &:hover {
+                            color: $base-color;
+                        }
+                    }
+                }
+            }
+        }
+        .right-content-area {
+            display: inline-block;
+            float: right;
+            ul {
+                li {
+                    display: inline-block;
+                    margin: 0 7px;
+                    a {
+                        color: #aeb5bc;
+                        font-size: 14px;
+                        @include transition($transition);
+                        &:hover {
+                            color: $base-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

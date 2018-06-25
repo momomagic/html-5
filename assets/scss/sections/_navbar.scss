@@ -1,0 +1,96 @@
+/*------------------------------
+    Navbar Area
+------------------------------*/
+.show>.dropdown-menu {
+    display: block;
+}
+.navbar-area.nav-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+    z-index: 999;
+    border-bottom: 1px solid #eaeaea;
+}
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+.navbar-area{
+    .navbar{
+        padding: 0;
+        .collapse{
+            &.navbar-collapse{
+                justify-content: flex-end;
+                .navbar-nav {
+                    .nav-item{
+                        padding: 40px 12px;
+                        &.dropdown{
+                            &:hover{
+                                .dropdown-menu {
+                                    display: block;
+                                    margin-top: -1px;
+                                    border: none;
+                                }
+                            }
+                        }
+                        &.btn-wrapper{
+                            padding: 30px 0;
+                            margin-left: 20px;
+                        }
+                        &.active{
+                            .nav-link{
+                                color: $base-color;
+                            }
+                        }
+                        &:hover{
+                            .nav-link{
+                                color: $base-color;
+                            }
+                        }
+                        .nav-link{
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: #64687e;
+                            font-weight: 600;
+                            &.boxed-btn{
+                                line-height: 60px;
+                                border-color: rgba(0,0,0,.10);
+                                i{
+                                    color: $base-color;
+                                    padding-right: 10px;
+                                }
+                                &:hover{
+                                    i{
+                                        color: $white;
+                                    }
+                                    color: $white;
+                                }
+                            }
+
+                        }
+                        .dropdown-menu{
+                            padding:0;
+                            &.show{
+                                 display: block;
+                                 margin-top: -1px;
+                                 border: none;
+                            }
+                            .dropdown-item{
+                                padding: 15px 20px;
+                                font-size: 14px;
+                                color: #64687e;
+                                font-weight: 600;
+                                &:active{
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

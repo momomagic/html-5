@@ -1,0 +1,63 @@
+/*------------------------------
+    Header Area
+------------------------------*/
+
+.header-area {
+    position: relative;
+    padding: 160px 0 165px 0;
+    &.header-bg{
+        background-image: url(../img/bg/header-bg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .right-image{
+        position: absolute;
+        right: 10%;
+        bottom: 0;
+    }
+    .single-header-item{
+        .subtitle{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 30px;
+            color: #006cff;
+            margin-bottom: 30px;
+            display: block;
+        }
+        h1{
+            span{
+                color: #262b49;
+                font-size: 40px;
+                line-height: 50px;
+                font-weight: 400;
+                display: block;
+            }
+            font-size: 60px;
+            line-height: 70px;
+            font-weight: 700;
+        }
+        .btn-wrapper{
+            margin-top: 42px;
+            .boxed-btn{
+                border: 2px solid $base-color;
+                margin: 0 10px;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:hover{
+                    background-color: transparent;
+                     border-color: rgba(0, 0, 0, 0.10);
+                     color: #262b49;
+                }
+                &.blank{
+                    border-color: rgba(0,0,0,0.10);
+                    color: #262b49;
+                    &:hover{
+                        background-color: $base-color;
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+}

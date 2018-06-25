@@ -1,0 +1,35 @@
+/*------------------------
+    News Feeds
+-------------------------*/
+.news-feed-area{
+    padding: 120px 0 110px 0;
+    .single-news-feed-item{
+        .content{ 
+            text-align: center;
+            padding:  27px 10px 0 10px;
+            .meta-data{
+                margin-bottom: 13px;
+                li{
+                    margin: 0 10px;
+                    display: inline-block;
+                    a{
+                        color: #a3a5b0;
+                        @include transition($transition);
+                        &:hover{
+                            color: $base-color;
+                        }
+                    }
+                }
+            }
+            .title {
+                color: #262b49;
+                font-size: 26px;
+                line-height: 36px;
+                @include transition($transition);
+                &:hover{
+                    color: $base-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,93 @@
+/*------------------------
+	Css Indexing
+--------------------------
+** @typography
+--------------------------
+** Global css
+--------------------------
+** Breadcumb Area
+--------------------------
+** Preloader
+--------------------------
+** Normalize
+--------------------------
+** Navbar Area
+--------------------------
+** Header Area
+--------------------------
+** Support Bar
+--------------------------
+** Call To Action
+--------------------------
+** How It Works
+--------------------------
+** Our service
+--------------------------
+** Editing Company
+--------------------------
+** Service
+--------------------------
+** Portfolio area
+--------------------------
+** News Feeds
+--------------------------
+** Brand Carousel
+--------------------------
+** testimonial
+--------------------------
+** Sidebar
+--------------------------
+** Footer Area
+--------------------------
+** About Page
+--------------------------
+** Pricing page
+--------------------------
+** Trial Offer
+--------------------------
+** How Page
+--------------------------
+** Contact Page
+--------------------------
+** Blog Page
+--------------------------
+** Blog Details Page
+--------------------------
+** Signup Page
+--------------------------
+
+*/
+
+//== Template Main Color
+$base-color: #006cff;
+$secondary-color: #262b49;
+$bg-color:#f7f7f7;
+$white: #fff;
+//== heading color
+$heading-color: #262b49;
+$descr-color: #64687e;
+/*-----------------
+    @Typography
+-----------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:300,400,500,600,700,800');
+$body-font:'Open Sans',
+sans-serif;
+$heading-font:'Poppins',
+serif;
+//== font sizes
+$base-font-size: 14px !default;
+$font-size-h1: 60px !default;
+$font-size-h2: 52px !default;
+$font-size-h3: 26px !default;
+$font-size-h4: 22px !default;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height: 1.6 !default; // 24/15
+// border-radius
+$border-radius-5: 5px !default;
+$border-radius-25: 25px !default;
+$border-radius-3: 3px !default;
+$border-radius-circle: 50% !default;
+//  transition
+$transition: all .3s ease-in;
+$transition-long: all .5s ease-in;
