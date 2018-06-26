@@ -277,7 +277,7 @@
     transform: rotate(-45deg); }
 
 .boxed-btn {
-  float: right;
+  display: inline-block;
   text-align: center;
   height: 60px;
   line-height: 60px;
@@ -893,11 +893,11 @@ ul {
 ------------------------------*/
 .header-area {
   position: relative;
-  padding: 160px 0 165px 0; }
+  padding: 220px 0 220px 0; }
   .header-area.header-bg {
-    background-image: url(../img/bg/header-bg-3.jpg);
+    background-image: url(../img/bg/header-partnership.jpg);
     background-size: cover;
-    background-position: center; }
+    background-position: top; }
   .header-area .right-image {
     position: absolute;
     right: 10%;
